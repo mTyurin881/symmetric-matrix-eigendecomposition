@@ -55,3 +55,10 @@ The trade-off is cost: each full sweep is O(n^3) and convergence takes several s
 ```
 PYTHONPATH=src python -m unittest discover -s tests
 ```
+
+## Design notes
+
+The window stores values eagerly rather than keeping running aggregates. Running
+sums drift with floating point over long streams, and recomputing from a small
+buffer is cheap enough that the drift is not worth the speed.
+
