@@ -1,6 +1,6 @@
 [project]
 name = "symmetric-matrix-eigendecomposition"
-version = "0.1.0"
+version = "0.1.1"
 description = "Diagonalizes real symmetric matrices using the Jacobi eigenvalue algorithm without external dependencies."
 requires-python = ">=3.10"
 dependencies = []
